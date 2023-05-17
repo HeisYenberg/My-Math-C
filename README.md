@@ -3,7 +3,7 @@
 
 ##  Usage :
 - To build a library run `make s21_math.a`
-- To see tests run `make test`, might need to install `chech`.
+- To see tests run `make test`, might need to install `check`.
 - To see tests code coverage run `make gcov_report`, might need to install `lcov`. 
 ### Overview of "s21_math.h" functions
 
