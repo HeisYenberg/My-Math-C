@@ -21,7 +21,7 @@
 | 10 | `long double floor(double x)` | returns the nearest integer not greater than the given value |
 | 11 | `long double fmod(double x, double y)` | remainder of the floating-point division operation |
 | 12 | `long double log(double x)` | computes natural logarithm |
-| 13 | `long double pow(double base, double exp)` | raises a number to the given power |
+| 13 | `long double pow(double x, double y)` | raises a number to the given power |
 | 14 | `long double sin(double x)` | computes sine |
 | 15 | `long double sqrt(double x)` | computes square root |
 | 16 | `long double tan(double x)` | computes tangent |
