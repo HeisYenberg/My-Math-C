@@ -17,7 +17,7 @@
 | 6 | `long double cos(double x)` | computes cosine |
 | 7 | `long double exp(double x)` | returns e raised to the given power |
 | 8 | `long double fabs(double x)` | computes absolute value of a floating-point value |
-| 9 | `long double fact(int x)` | computes a factorial of a number |
+| 9 | `long double fact(int x)` | computes a factorial of a integer value |
 | 10 | `long double floor(double x)` | returns the nearest integer not greater than the given value |
 | 11 | `long double fmod(double x, double y)` | remainder of the floating-point division operation |
 | 12 | `long double log(double x)` | computes natural logarithm |
