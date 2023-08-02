@@ -1,5 +1,5 @@
-#ifndef S21_MATH_H
-#define S21_MATH_H
+#ifndef MY_MATH_H
+#define MY_MATH_H
 
 #define MY_INF __builtin_inf()
 #define MY_NAN __builtin_nan("")
@@ -26,4 +26,4 @@ long double my_sin(double x);
 long double my_sqrt(double x);
 long double my_tan(double x);
 
-#endif
+#endif // MY_MATH_H
