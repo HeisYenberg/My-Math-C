@@ -9,18 +9,18 @@ else
 	OPEN_CMD = open
 endif
 
-all: clean s21_math.a test gcov_report
+all: clean my_math.a test gcov_report
 
-s21_math.a:
-	$(CC) -c s21_math/s21*.c
-	ar -crs s21_math/s21_math.a s21_*.o
+my_math.a:
+	$(CC) -c my_math/my_math.c
+	ar -crs my_math/my_math.a my_math.o
 	
-test: clean s21_math.a
-	$(CC) test.c s21_math/s21_math.a $(FLAGS) -o test
+test: clean my_math.a
+	$(CC) tests/test.c my_math/my_math.a $(FLAGS) -o test
 	./test
 
 gcov_report: clean
-	$(CC) test.c s21_math/s21*.c $(FLAGS) -o test
+	$(CC) tests/test.c my_math/my_math.c $(FLAGS) -o test
 	./test
 	lcov -t "./test" -o report.info --no-external -c -d .
 	genhtml -o report report.info
@@ -28,7 +28,4 @@ gcov_report: clean
 	rm -rf *.gcno *gcda *.gco
 
 clean:
-	rm -rf *.o s21_math/s21_math.a test *.gcno *gcda *.gcov gcov report report.info
-
-clang:
-	clang-format -style=Google -n *.c *.h
+	rm -rf *.o my_math/my_math.a test *.gcno *gcda *.gcov gcov report report.info
