@@ -1,4 +1,4 @@
-# My-Math-C
+# My-Math-on-C
 
 ## My version of the standard math.h library in the C programming language.
 
